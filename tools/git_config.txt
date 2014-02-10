@@ -1,0 +1,17 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "cb-upload"]
+	url = git@heroku.contentbird:cb-upload.git
+	fetch = +refs/heads/*:refs/remotes/cb-upload/*
+[remote "cbdev-upload"]
+	url = git@heroku.com:cbdev-upload.git
+	fetch = +refs/heads/*:refs/remotes/cbdev-upload/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[branch "sprint"]
+	remote = origin
+	merge = refs/heads/sprint

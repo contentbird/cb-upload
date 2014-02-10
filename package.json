@@ -1,0 +1,23 @@
+{
+  "name": "cb-upload",
+  "version": "0.0.1",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/contentbird/cb-upload.git"
+  },
+  "dependencies": {
+  	"buffers": "0.1.1",
+  	"aws2js": "0.7.5"
+  },
+  "devDependencies": {
+    "should": "",
+    "sinon": "",
+    "request": "",
+    "mocha": "",
+    "coffee-script": ""
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  }
+}
