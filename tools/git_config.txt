@@ -1,17 +1,21 @@
 [core]
-	repositoryformatversion = 0
-	filemode = true
-	bare = false
-	logallrefupdates = true
-[remote "cb-upload"]
-	url = git@heroku.contentbird:cb-upload.git
-	fetch = +refs/heads/*:refs/remotes/cb-upload/*
-[remote "cbdev-upload"]
-	url = git@heroku.com:cbdev-upload.git
-	fetch = +refs/heads/*:refs/remotes/cbdev-upload/*
+  repositoryformatversion = 0
+  filemode = true
+  bare = false
+  logallrefupdates = true
+  ignorecase = true
+  precomposeunicode = false
+[remote "origin"]
+  url = git@github.com:contentbird/cb-upload.git
+  fetch = +refs/heads/*:refs/remotes/origin/*
 [branch "master"]
-	remote = origin
-	merge = refs/heads/master
-[branch "sprint"]
-	remote = origin
-	merge = refs/heads/sprint
+  remote = origin
+  merge = refs/heads/master
+[heroku]
+  account = nna
+[remote "cbdev-upload"]
+  url = git@heroku.com:cbdev-upload.git
+  fetch = +refs/heads/*:refs/remotes/heroku/*
+[remote "cb-upload"]
+  url = git@heroku.com:cb-upload.git
+  fetch = +refs/heads/*:refs/remotes/heroku/*

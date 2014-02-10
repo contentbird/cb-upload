@@ -6,7 +6,7 @@ currentBranch() {
 
 safeMatchingEnvForBranch() {
   case $1 in
-    "sprint") env="cbdev-upload";;
+    "dev") env="cbdev-upload";;
     "master") env="cb-upload";;
     *) echo "no matching env for $1"
        exit ;;
@@ -15,7 +15,7 @@ safeMatchingEnvForBranch() {
 }
 
 case $1 in
-  "cbdev-upload") branch="sprint"
+  "cbdev-upload") branch="dev"
                   heroku_app="$1";;
   "cb-upload") branch="master"
                heroku_app="$1";;
