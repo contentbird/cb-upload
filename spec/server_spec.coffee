@@ -49,7 +49,7 @@ describe 'Server', ->
             request ("http://localhost:5002/resize_image?image=#{encodeURIComponent('test/image_source.jpeg')}&callback=jsonp1234"), (err, res, body) ->
               should.not.exist(err)
               res.statusCode.should.equal 200
-              jsonString = JSON.stringify({ "key": "test/image_source_thumb.jpg", "width": 500, "height": 375 })
+              jsonString = JSON.stringify({ "key": "test/image_source_thumb.jpg", "width": 400, "height": 300 })
               body.should.equal "jsonp1234(#{jsonString})"
               done()
 

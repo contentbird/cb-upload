@@ -45,7 +45,7 @@ class @Server
     return s3
 
   convertImage= (image_stream, callback) ->
-    args = '-resize 500x500 jpg:-'
+    args = '-resize 400x400 jpg:-'
     proc = spawn 'convert', ['-'].concat(args.split(' '))
     proc.stderr.on 'data', (err) ->
       return callback err.toString(), null
